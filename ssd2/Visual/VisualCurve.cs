@@ -26,7 +26,6 @@ abstract class VisualCurve : ICurve, IDrawable
             curve.GetPoint(t, out p);
         }
 
-        // Новый метод для получения всех точек кривой
         protected void GeneratePoints()
         {
             points = new IPoint[n];

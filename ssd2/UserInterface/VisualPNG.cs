@@ -18,7 +18,6 @@ namespace ssd2
         {
             GeneratePoints();
 
-            // Рисуем линии между последовательными точками
             for (int i = 0; i < points.Length - 1; i++)
             {
                 concreteContext.GetGraphics().DrawLine(
@@ -28,7 +27,6 @@ namespace ssd2
                 );
             }
 
-            // Сохраняем изображение
             string fullPath = HomePath.HP + concreteContext.GetFileName();
             try
             {
